@@ -1,0 +1,139 @@
+/* ===== General ===== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #ffffff; /* Fondo blanco limpio */
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+/* ===== Contenedor principal ===== */
+.main-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Títulos ===== */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e60000; /* Rojo corporativo */
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+/* ===== Caja de búsqueda ===== */
+.search-box {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.search-box input[type="text"] {
+    padding: 12px;
+    width: 350px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.search-box input[type="text"]:focus {
+    border-color: #00bfff;
+    box-shadow: 0 0 8px rgba(0, 191, 255, 0.4);
+    outline: none;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #e60000, #cc0000);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.search-box button:hover {
+    background: linear-gradient(135deg, #ff3333, #b30000);
+    transform: translateY(-2px);
+}
+
+/* ===== Tabla ===== */
+.table-container {
+    overflow-x: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+/* Encabezado */
+thead {
+    background: linear-gradient(90deg, #e60000, #ff4d4d); /* Rojo degradado */
+    color: #000000;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Filas alternadas */
+tr:nth-child(even) {
+    background-color: #f0f8ff; /* Celeste claro */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* Blanco */
+}
+
+/* Hover en filas */
+tbody tr:hover {
+    background-color: rgba(0, 191, 255, 0.1); /* Celeste suave */
+    transition: background 0.3s ease;
+}
+
+/* ===== Imágenes ===== */
+.thumb {
+    width: 90px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.thumb:hover {
+    transform: scale(1.08);
+}
+
+/* Texto cuando no hay imagen */
+.no-img {
+    color: #999;
+    font-style: italic;
+}

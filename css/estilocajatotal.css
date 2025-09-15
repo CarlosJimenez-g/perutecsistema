@@ -1,0 +1,86 @@
+/* Fuente y fondo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Contenedor centrado tipo tarjeta */
+form {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    color: #ff0000;
+    margin-top: 30px;
+}
+
+/* Inputs y selects */
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+    padding: 10px 12px;
+    border: 1px solid #b2dfdb;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #26a69a;
+    box-shadow: 0 0 5px rgba(38, 166, 154, 0.5);
+    outline: none;
+}
+
+/* Botón */
+button[type="submit"] {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #004d40;
+}
+
+/* Mensajes */
+p strong {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 16px;
+    color: #388e3c;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #00695c;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+        margin: 20px;
+    }
+}

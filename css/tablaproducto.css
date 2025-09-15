@@ -1,0 +1,96 @@
+/* Fondo general */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Título general */
+h1 {
+    text-align: center;
+    color: #0d6efd;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+/* Secciones como tarjetas */
+.section {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px 30px;
+    margin-bottom: 40px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.section:hover {
+    transform: scale(1.01);
+}
+
+/* Títulos de sección */
+.section h2 {
+    color: #0d6efd;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-bottom: 2px solid #0d6efd;
+    padding-bottom: 8px;
+}
+
+/* Inputs y textarea */
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Botones */
+button {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0b5ed7;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    text-align: left;
+    padding: 12px;
+}
+
+th {
+    background-color: #0d6efd;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
